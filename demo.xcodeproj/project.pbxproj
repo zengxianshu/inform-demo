@@ -86,14 +86,14 @@
 			children = (
 				6DA4F6DE1AE0CCC70063A204 /* AppDelegate.h */,
 				6DA4F6DF1AE0CCC70063A204 /* AppDelegate.m */,
+				6D4A33EB1B9E923B004CBF44 /* DetilViewController.h */,
+				6D4A33EC1B9E923B004CBF44 /* DetilViewController.m */,
 				6DA4F6E11AE0CCC70063A204 /* ViewController.h */,
 				6DA4F6E21AE0CCC70063A204 /* ViewController.m */,
 				6DA4F6E41AE0CCC70063A204 /* Main.storyboard */,
 				6DA4F6E71AE0CCC70063A204 /* Images.xcassets */,
 				6DA4F6E91AE0CCC70063A204 /* LaunchScreen.xib */,
 				6DA4F6DA1AE0CCC70063A204 /* Supporting Files */,
-				6D4A33EB1B9E923B004CBF44 /* DetilViewController.h */,
-				6D4A33EC1B9E923B004CBF44 /* DetilViewController.m */,
 			);
 			path = demo;
 			sourceTree = "<group>";
