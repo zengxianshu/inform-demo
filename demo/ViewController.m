@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "DetilViewController.h"
 @interface ViewController ()
 
 @end
@@ -19,21 +19,17 @@
     //注册通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(action:) name:@"123" object:nil];
     
-    NSString *str=@"1234567";
     
-    NSDictionary *dic=[[NSDictionary alloc]initWithObjectsAndKeys:str,@"and", nil];
-    //发送通知
-    [[NSNotificationCenter defaultCenter]
-     postNotificationName:@"123"
-     object:self userInfo:dic];
+    DetilViewController *vc = [[DetilViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 
-
+// 接收到通知处理
 -(void)action:(NSNotification *)notification
 {
-    NSLog(@"%@",notification.userInfo);
+    NSLog(@"VC => %@",notification.userInfo);
 }
 
 - (void)didReceiveMemoryWarning {

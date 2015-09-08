@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D4A33ED1B9E923B004CBF44 /* DetilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4A33EC1B9E923B004CBF44 /* DetilViewController.m */; };
 		6DA4F6DD1AE0CCC70063A204 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4F6DC1AE0CCC70063A204 /* main.m */; };
 		6DA4F6E01AE0CCC70063A204 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4F6DF1AE0CCC70063A204 /* AppDelegate.m */; };
 		6DA4F6E31AE0CCC70063A204 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4F6E21AE0CCC70063A204 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D4A33EB1B9E923B004CBF44 /* DetilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetilViewController.h; sourceTree = "<group>"; };
+		6D4A33EC1B9E923B004CBF44 /* DetilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetilViewController.m; sourceTree = "<group>"; };
 		6DA4F6D71AE0CCC60063A204 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA4F6DB1AE0CCC70063A204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DA4F6DC1AE0CCC70063A204 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				6DA4F6E71AE0CCC70063A204 /* Images.xcassets */,
 				6DA4F6E91AE0CCC70063A204 /* LaunchScreen.xib */,
 				6DA4F6DA1AE0CCC70063A204 /* Supporting Files */,
+				6D4A33EB1B9E923B004CBF44 /* DetilViewController.h */,
+				6D4A33EC1B9E923B004CBF44 /* DetilViewController.m */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DA4F6E31AE0CCC70063A204 /* ViewController.m in Sources */,
+				6D4A33ED1B9E923B004CBF44 /* DetilViewController.m in Sources */,
 				6DA4F6E01AE0CCC70063A204 /* AppDelegate.m in Sources */,
 				6DA4F6DD1AE0CCC70063A204 /* main.m in Sources */,
 			);
@@ -418,6 +424,7 @@
 				6DA4F6FC1AE0CCC70063A204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DA4F6FD1AE0CCC70063A204 /* Build configuration list for PBXNativeTarget "demoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				6DA4F6FF1AE0CCC70063A204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
