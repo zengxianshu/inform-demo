@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "DetilViewController.h"
+
+NSString *changValue;
+
 @interface ViewController ()
 
 @end
@@ -19,17 +22,27 @@
     //注册通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(action:) name:@"123" object:nil];
     
+    changValue = @"全局变量";
     
-    DetilViewController *vc = [[DetilViewController alloc]init];
-    [self presentViewController:vc animated:YES completion:nil];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
+    button.backgroundColor = [UIColor redColor];
+    [self.view addSubview:button];
+    [button setTitle:@"下一页"forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(preVC) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)preVC{
+    DetilViewController *vc = [[DetilViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 // 接收到通知处理
 -(void)action:(NSNotification *)notification
 {
-    NSLog(@"VC => %@",notification.userInfo);
+    NSLog(@"VC中输出 => %@",notification.userInfo);
 }
 
 - (void)didReceiveMemoryWarning {

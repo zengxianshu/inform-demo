@@ -7,7 +7,7 @@
 //
 
 #import "DetilViewController.h"
-
+extern NSString *changValue;
 @interface DetilViewController ()
 
 @end
@@ -16,19 +16,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
     NSString *str=@"1234567";
     
-    NSLog(@"detilVC => %@",str);
+    NSLog(@"detilVC中输出 => %@",str);
+    
+    NSLog(@"detilVC中输出changValue => %@",changValue);
     
     NSDictionary *dic=[[NSDictionary alloc]initWithObjectsAndKeys:str,@"and", nil];
     //发送通知
     [[NSNotificationCenter defaultCenter]
      postNotificationName:@"123"
      object:self userInfo:dic];
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
+    button.backgroundColor = [UIColor redColor];
+    [self.view addSubview:button];
+    [button setTitle:@"返回"forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(dissVC) forControlEvents:UIControlEventTouchUpInside];
 
-    // Do any additional setup after loading the view.
 }
+
+-(void)dissVC{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
