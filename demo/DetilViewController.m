@@ -23,7 +23,8 @@ extern NSString *changValue;
     
     NSLog(@"detilVC中输出changValue => %@",changValue);
     
-    NSDictionary *dic=[[NSDictionary alloc]initWithObjectsAndKeys:str,@"and", nil];
+//    NSDictionary *dic=[[NSDictionary alloc]initWithObjectsAndKeys:str,@"and", nil];
+    NSDictionary *dic=@{@"and":str};
     //发送通知
     [[NSNotificationCenter defaultCenter]
      postNotificationName:@"123"
