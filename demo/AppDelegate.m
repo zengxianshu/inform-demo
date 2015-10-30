@@ -17,12 +17,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    // 创建一个本地通知
-    [ViewController registerLocalNotification:10];
-    
-    // 在不需要再推送时，可以取消推送
-//    [ViewController cancelLocalNotificationWithKey:@"key"];
 
     return YES;
 }
@@ -42,11 +36,15 @@
     [alert show];
     
     // 更新显示的徽章个数
-    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
-    badge--;
-    badge = badge >= 0 ? badge : 0;
-    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    if (application.applicationIconBadgeNumber)
+        application.applicationIconBadgeNumber -- ;
+//    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+//    badge--;
+//    badge = badge >= 0 ? badge : 0;
+//    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
     
+    // 在不需要再推送时，可以取消推送
+    [ViewController cancelLocalNotificationWithKey:@"key"];
 }
 
 
