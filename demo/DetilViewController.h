@@ -2,9 +2,10 @@
 //  DetilViewController.h
 //  demo
 //
-//  Created by 曾宪书 on 15/9/8.
-//  Copyright (c) 2015年 名兵团. All rights reserved.
+//  Created by 曾墨 on 15/4/17.
+//  Copyright (c) 2015年 . All rights reserved.
 //
+
 
 #import <UIKit/UIKit.h>
 
